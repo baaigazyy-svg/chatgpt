@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #202437;
+}
+
+.navbar {
+  background: #111827;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.logo span {
+  color: #60a5fa;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+  border-radius: 0 0 25px 25px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #dbeafe;
+}
+
+.section-title {
+  text-align: center;
+  margin: 40px 0 25px;
+  font-size: 28px;
+}
+
+.product-page {
+  padding: 0 7% 50px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.product-image {
+  height: 180px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.product-image span {
+  font-size: 85px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 22px;
+  color: #2563eb;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.buy-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #1d4ed8;
+}
+
+/* About жана Contact */
+
+.info-page {
+  min-height: 80vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-box {
+  background: white;
+  width: 100%;
+  max-width: 750px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.info-icon {
+  font-size: 55px;
+}
+
+.info-box h1 {
+  font-size: 34px;
+  color: #2563eb;
+  margin: 15px 0 20px;
+}
+
+.info-box h2 {
+  margin: 25px 0 12px;
+}
+
+.info-box p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.contact-item {
+  padding: 15px;
+  background: #f5f7fb;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.contact-item h3 {
+  margin-bottom: 8px;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+/* Телефонго ылайык */
+
+@media (max-width: 700px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    padding: 18px 5%;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .product-page {
+    padding: 0 5% 35px;
+  }
+
+  .product-image {
+    height: 140px;
+  }
+
+  .product-image span {
+    font-size: 65px;
+  }
+
+  .info-box {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
